@@ -22,9 +22,18 @@ class Main {
 				CadastraCandidatos.cadastrar()
 				println CadastraCandidatos.mapaCandidatos
 				break
+			case 2:
+				Votacao.iniciar()
+				break
+			case 3:
+				ContaResultado.calcular()
+				break
+			case 4:
+				println "Tchau!"
+				System.exit(0)
 			default:
 				inicio()
+				break
 		}
 	}
-
 }
