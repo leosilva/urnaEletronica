@@ -1,4 +1,4 @@
 minicursoGit
 ============
 
-Projeto exemplo utilizado no minicurso de Git.
+Projeto exemplo utilizado no minicurso de Git, ministrado no IFRN - Pau dos Ferros.
