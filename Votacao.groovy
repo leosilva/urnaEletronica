@@ -27,7 +27,6 @@ class Votacao {
 				realizarVotacao()
 			}
 			mapaVotacao[numeroDigitado] = mapaVotacao[numeroDigitado] + 1
-			println mapaVotacao[numeroDigitado]
 			println "Voto computado com sucesso!"
 			realizarVotacao()
 		}
