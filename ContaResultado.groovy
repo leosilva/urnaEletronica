@@ -1,19 +1,15 @@
 class ContaResultado {
 
-	def static votos = [:]
-
 	def static calcular (op) {
-		CadastraCandidatos.mapaCandidatos.each { numero, nome ->
-			println "Nome: $nome  --  Chapa $numero"
+
+		calcularVotosQuantidade()
+	}
+
+	def static calcularVotosQuantidade() {
+		Votacao.mapaVotacao.each { numero, qtdVotos ->
+			def nome = CadastraCandidatos.mapaCandidatos[numero]
+			println "Chapa $numero | Nome $nome | Quantidade de votos $qtdVotos"
 		}
 	}
-
-	def calcularVotosPorcetagem() {
-
-	}
-
-	def calcularVotosQuantidade() {
-		
-	}
-	
 }
+	

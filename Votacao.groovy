@@ -25,10 +25,11 @@ class Votacao {
 			} else if (!mapaVotacao.keySet().contains(numeroDigitado)) {
 				println "Candidato inexistente!"
 				realizarVotacao()
-			}
+			} else {
 			mapaVotacao[numeroDigitado] = mapaVotacao[numeroDigitado] + 1
 			println "Voto computado com sucesso!"
 			realizarVotacao()
+			}
 		}
 	}
 		
