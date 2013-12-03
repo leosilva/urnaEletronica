@@ -9,11 +9,10 @@ class CadastraCandidatos {
 				println "Digite o nome do candidato: "
 				def nome = it.readLine()
 				mapaCandidatos[numero] = nome
+				throw new NullPointerException()
 				println("Cadastrar novo Candidato? 1- Sim 2- Não")
 				op = it.readLine() as Integer
-			}	
-			
-			
+			}			
 			Runtime run = Runtime.getRuntime();
 			run.exec("clear")
 			Main.inicio()
