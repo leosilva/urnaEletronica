@@ -1,5 +1,6 @@
 class ContaResultado {
 
+
 	static def votos;
 
 	def static calcular (op) {
@@ -24,5 +25,19 @@ class ContaResultado {
 			println "Chapa $numero | Nome $nome | Porcentagme de votos $porcentagemVotos"
 		}
 	}
-}
+
 	
+
+	def static mapaPorcentagem = [:]
+	def contarResultadoEmPorcentagem(){
+		
+		def contagem = 0
+		Votacao.mapaVotacao.each{
+			contagem += mapaVotacao[it]
+		}
+		
+		Votacao.mapaVotacao.each{chave, valor ->
+			mapaPorcentagem[chave] = (valor*100)/contagem
+		}
+	}
+}
