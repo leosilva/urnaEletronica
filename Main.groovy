@@ -1,5 +1,6 @@
 class Main {
 	def static main(args) {	
+		CadastraCandidatos.mapaCandidatos = [1:	"Lula", 2: "Jucelino"]
 		inicio()
 	}
 
@@ -15,6 +16,8 @@ class Main {
 			def opcao = it.readLine() as Integer
 			verificaOpcao(opcao)
 		}
+
+
 	}
 
 
